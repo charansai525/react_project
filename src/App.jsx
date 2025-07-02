@@ -82,7 +82,10 @@ element:
   </div>
 }
 
-  ]
+  ],
+    {
+    basename: "/react_project" // ✅ This is critical for GitHub Pages
+  }
 );
 
 
