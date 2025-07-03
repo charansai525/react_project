@@ -36,12 +36,6 @@ let router = createBrowserRouter([
         path: '/Contact',
         element: <Contact />
       },
-
-      {
-        path: '/User',
-        element: <Users/>
-      }
-      ,
       {
         path: '/User/:id',
         element: <UserDetails />
@@ -60,7 +54,12 @@ let router = createBrowserRouter([
         element: <Error />
       }
     ]
-  }
+   
+  },
+    {
+        path: '/User',
+        element: <Users/>
+      }
 ]);
 
 function App() {
