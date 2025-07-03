@@ -15,7 +15,7 @@ export function UserDetails (){
     return(
         <div>
           
-            <Header/>
+           
             <h1>This is a user</h1>
             <h1>User id is {parems.id}</h1>
             <NavLink to = "/User">Back</NavLink>
