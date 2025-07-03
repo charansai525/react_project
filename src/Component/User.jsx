@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "./Header/Header";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function Users (){
 
@@ -17,7 +17,7 @@ export function Users (){
 
     return(
         <div>
-            {/* <Header/> */}
+            <Header/>
             <h1>This is a user</h1>
             
             

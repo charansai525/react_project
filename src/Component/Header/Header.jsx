@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Header.css"
+// import "./Header.css"
 import { Sidebar } from "../Login/Sidebar";
 import Logo from '../../assets/Logo.jpeg'
 // import { GiHamburgerMenu } from "react-icons/gi";
@@ -38,11 +38,11 @@ export function Header(){
                 </NavLink>
             </li>
 
-                {/* <li>
+                <li>
                     <NavLink className= {({isActive})=>
                         `duration-200 ${isActive ? "text-orange-700" : "text-gray-700 hover:text-orange-700"} `
                     } to='/User'>Users</NavLink>
-                </li> */}
+                </li>
             <li>
                 <NavLink className={({isActive})=>
                     `duration-200 ${isActive ? "text-orange-700" : "text-gray-700 hover:text-orange-700"} `

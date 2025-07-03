@@ -1,16 +1,18 @@
 
-// import './App.css'
+import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Header } from './Component/Header/Header';
 import { Home } from './Component/Home';
 import { Fotter } from './Component/Fotter/Fotter';
-import { About } from './Component/About/About Us';
+import { About } from './Component/About/AboutUs';
 import { Contact } from './Component/Contact';
 import { Github } from './Component/Github/GIthub';
 import { Login } from './Component/Login/Login';
 import { Users } from './Component/User';
 import { UserDetails } from './Component/UserDetails';
+import { Error } from './error';
 
+// import '../src/index.css';
 
 
 
@@ -49,8 +51,10 @@ element:
   path:'/User',
   element:
   <div>
-    <Header/>
+    {/* <Header/> */}
+    
     <Users/>
+  
     
   </div>
 },
@@ -58,8 +62,8 @@ element:
   path:'/User/:id',
   element:
   <div>
-    <UserDetails/>
-    <UserDetails/>
+    {/* <UserDetails/> */}
+  <UserDetails/>
   </div>
 },
 
@@ -80,11 +84,18 @@ element:
     <Login/>
 
   </div>
+},
+{
+  path:"/*",
+  element:
+  <div>
+    <Error/>
+  </div>
 }
 
   ],
     {
-    basename: "/react_project" // ✅ This is critical for GitHub Pages
+    basename: "/react_project" 
   }
 );
 

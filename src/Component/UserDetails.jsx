@@ -1,6 +1,8 @@
 import React from "react";
-import { Header } from "./Header/Header";
+
 import {  NavLink, useParams } from "react-router-dom";
+import { Header } from "./Header/Header";
+
 
 export function UserDetails (){
 
@@ -12,6 +14,7 @@ export function UserDetails (){
 
     return(
         <div>
+          
             <Header/>
             <h1>This is a user</h1>
             <h1>User id is {parems.id}</h1>
